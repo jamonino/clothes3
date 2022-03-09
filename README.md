@@ -106,6 +106,7 @@ NOTA2: Modificar el archivo DB.sql no tiene ningún efecto sobre la bbdd. Para a
 * GET - Lista **2P**
 
 Obtener un listado de productos de las marcas especificadas en las petición
+
 --> REQUEST 
 ```js
 [
