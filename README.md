@@ -63,7 +63,7 @@ Actualmente los elementos de la tabla products no están relacionados con ningun
 }
 ```
 
-NOTA1: Si alguien no sabe cómo modificar el archivo DB.sql podrá pedirlo al profesor por <a href="mailto:joseantonio.monino@murciaeduca.es">email</a> perdiendo el punto correspondiente.
+NOTA1: Si alguien no sabe cómo modificar el archivo DB.sql podrá pedirlo al profesor por <a href="mailto:joseantonio.monino@murciaeduca.es">email</a> perdiendo los 0,5 puntos correspondientes.
 
 NOTA2: Modificar el archivo DB.sql no tiene ningún efecto sobre la bbdd. Para aplicar los cambios habrá que ejecutar su contenido en la misma tal y como se detallaba en el ANEXO BBDD.
 
