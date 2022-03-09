@@ -148,7 +148,7 @@ Obtener un listado de productos de las marcas especificadas en las petición
 
 * PUT - Edición
 
-Crear un Web service de tipo PUT en la ruta product/brand/{id} para editar todos los productos de una determidada marca. Con control de nulos (editar únicamente los parámetros pasados).
+Crear un Web service de tipo PUT en la ruta product/brand/{id} para editar todos los productos de una determidada marca. Con control de nulos (editar únicamente los parámetros que se pasan en la petición).
 
 --> REQUEST 
 ```js
