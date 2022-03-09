@@ -69,9 +69,9 @@ NOTA2: Modificar el archivo DB.sql no tiene ningún efecto sobre la bbdd. Para a
 
 ### 2P Ejercicio 2 (PHP): 
 
-**/brand/**
+**/brandOrigin/**
 
-* GET Crear un Web service de tipo GET en la ruta brand/ para listar todas las marcas que hay en la bbdd con el origen especificado. **1P**
+* POST Crear un Web service de tipo POST en la ruta brandOrigin/ para listar todas las marcas que hay en la bbdd con el origen especificado. **1P**
 
 --> REQUEST 
 ```js
@@ -101,12 +101,22 @@ NOTA2: Modificar el archivo DB.sql no tiene ningún efecto sobre la bbdd. Para a
 
 ### 2P Ejercicio 3 (JAVA): 
 
-**admin/product/{id}** 
+**user/brand/** 
 
 * GET - Lista **2P**
 
-Modificar el Web service /user/{gender} para que a la información devuelta a cada producto le añada información sobre la marca a la que pertenece
-
+Obtener un listado de productos de las marcas especificadas en las petición
+--> REQUEST 
+```js
+[
+  {
+    "id":1
+  },
+  {
+    "id":3
+  }
+]
+```
 <-- RESPONSE
 ```js
 {
@@ -117,41 +127,34 @@ Modificar el Web service /user/{gender} para que a la información devuelta a ca
       "name":"zapatillas",
       "price":2900,
       "stock":8,
-      "gender":1,
-      "brand":{
-        "name":"Nike",
-        "origin":"USA"
-      }
+      "gender":1
     },
     {
       "id":2,
       "name":"bufanda",
       "price":1200,
       "stock":4,
-      "gender":1,
-      "brand":{
-        "name":"Gucci",
-        "origin":"Italia"
-      }
+      "gender":1
     }
   ]
 }
 ```
 
 
-### 1P Ejercicio 4 (PHP): 
+### 2P Ejercicio 4 (JAVA): 
 
-**brand/{id}**
+**product/brand/{id}**
 
 * PUT - Edición
 
-Crear un Web service de tipo PUT en la ruta brand/ para editar una marca con control de nulos (si solo se pasa un parámetro, editar únicamente ese parámetro).
+Crear un Web service de tipo PUT en la ruta product/brand/{id} para editar todos los productos de una determidada marca. Con control de nulos (editar únicamente los parámetros pasados).
 
 --> REQUEST 
 ```js
 {
-  "name":"Adidas",
-  "origin":"Alemania"
+  "name":"camisa",
+  "gender":1,
+  "stock":33
 }
 ```
 <-- RESPONSE
