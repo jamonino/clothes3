@@ -103,7 +103,7 @@ NOTA2: Modificar el archivo DB.sql no tiene ningún efecto sobre la bbdd. Para a
 
 **user/brand/** 
 
-* GET - Lista **2P**
+* POST - Lista **2P**
 
 Obtener un listado de productos de las marcas especificadas en las petición
 
